@@ -1,0 +1,139 @@
+@keyframes diapositivas {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+:root {
+	font-family: 'Handlee', cursive;
+	background-image: url(../imagenes/background.jpg) ;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+article{
+	
+	background-color: rgba(231,235,231,0.7);
+	width:60%;
+	margin-left:20%;
+}
+
+article:first-of-type {
+	margin-top:50px;
+}
+
+.texto{
+	text-align: center;
+	-moz-column-count:2;
+	-moz-column-gap: 20px;
+	-webkit-column-count:2;
+	-webkit-column-gap: 20px;
+	column-count:2;
+	column-gap: 20px;
+	font-size: 17pt;
+	margin-bottom:100px;
+	padding-top: 25px;
+	box-shadow: 5px 5px 3px grey;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.diapos{
+	overflow: hidden;
+}
+
+.diapos ul {
+	display: flex;
+	width: 400%;
+	animation: diapositivas 20s infinite alternate linear;
+}
+
+.diapos li {
+	width: 100%;
+}
+
+.diapos img {
+	width: 100%;
+	height: 500px;	
+}
+
+.ofertas {
+    height:580px;
+    position: relative;
+}
+
+.ofertas div:first-of-type{
+    height:500px;
+}
+
+.ofertas [id^="oferta"] {
+	position:absolute;
+	top:0;
+	left:0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    width:100%;
+}
+
+.ofertas li:first-child {
+    opacity: 1;
+}
+
+.ofertas li:target {
+    opacity: 1;
+}
+
+.ofertas li img {
+    width: 100%;
+	height: 500px;	
+}
+
+.listaofertas ul{
+	display: flex;
+	flex-direction:row;
+	box-shadow: 5px 5px 3px grey;
+	font-size: 15pt;
+	text-align:center;
+	position:relative;
+
+}
+
+.listaofertas li {
+	width: 100%;
+	height: 60px;
+	padding-top: 20px;
+	color:black;
+}
+
+.listaofertas li:hover{
+	font-weight:bold;
+	background-color: #333333;
+	transition-property:background-color,box-shadow;
+	transition-duration:0.5s, 0.3s;
+	box-shadow: 6px 6px 2px grey;
+	border-radius: 0.3em;
+}
+
+.listaofertas li:hover a{
+	color:white;
+}
+
+.listaofertas a:any-link {
+	color:black;
+	text-decoration: none;
+}
+
+
+

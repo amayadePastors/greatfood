@@ -1,0 +1,136 @@
+@keyframes annadir {
+	0% {visibility: hidden;}
+	1% {visibility: visible;}
+	10% {background-color: rgba(37,128,162,1);}
+	90% {background-color: rgba(37,128,162,1);}
+	100% {visibility: hidden;}
+}
+
+:root {
+	font-family: 'Handlee', cursive;
+	background-image: url(../../../imagenes/background.jpg) ;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+article{
+	background-color: rgba(231,235,231,0.7);
+	width:80%;
+	margin-left:10%;
+}
+
+article:first-of-type {
+	margin-top:50px;
+}
+
+article > div{
+	margin-left:5%;
+}
+
+#desayuno1{
+	background-image:url("../imagenes/Pack1/desayuno.png"); 
+}
+
+#comida1-1{
+	background-image:url("../imagenes/Pack1/comida-primero.png"); 
+}
+#comida1-2{
+	background-image:url("../imagenes/Pack1/comida-segundo.png"); 
+}
+
+#cena1-1{
+	background-image:url("../imagenes/Pack1/cena.png"); 
+}
+
+#desayuno2{
+	background-image:url("../imagenes/Pack2/desayuno.png"); 
+}
+
+#comida2-1{
+	background-image:url("../imagenes/Pack2/comida.png"); 
+}
+
+#cena2-1{
+	background-image:url("../imagenes/Pack2/cena-primero.png"); 
+}
+
+#cena2-3{
+	background-image:url("../imagenes/Pack2/cena-postre.png"); 
+}
+
+h1{
+	text-align:center;
+	font-weight:bold;
+	font-size: 1.5em;
+	padding-top:25px;
+}
+h2{
+	margin:0px;
+}
+
+.foto{
+	background-size: 100% 100%;
+	background-repeat:no-repeat; 
+	text-align: center;
+	width:100%;
+	height:100%;
+}
+
+.pack{
+	width:75%;
+	margin-left:5%;
+	display:flex;
+	height:250px;
+	-webkit-align-items:center; 
+	align-items:center;
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+	flex-direction:row;
+}
+
+.pack>div{
+	width:33.5%;
+	height: 95%
+}
+
+
+.ingredientes{
+	height: 100%;
+	overflow: auto;
+	text-align: center;
+	text-shadow: 5px 5px 3px black;
+	background-color: rgba(0,0,0,0.6);
+	color:white;
+	display:none;
+}
+
+
+.precio{
+  margin-left:5%;
+}
+
+#anadido{
+	background-color: rgba(37,128,162,0);
+	height: 150px;
+	width:350px;
+	position:fixed;
+	top:83%;
+	left:81%;
+	color:white;
+	font-weight: bold;
+	font-size:1.5em;
+	padding-top:2%;
+	text-align: center;
+	border-radius: 2%;
+	visibility:hidden;
+}
+
+
+.animacion{
+	animation: annadir 2s linear;
+}
+
+h2 > em{
+	color:rgb(37,128,162);
+	display:none;
+}

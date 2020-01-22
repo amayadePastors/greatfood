@@ -1,0 +1,347 @@
+<!doctype html lang="es">
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title> GREATFOOD-Menús Estandar</title>
+	<link rel="StyleSheet" href="./css/stylesheet.css" type="text/css">
+	<link rel="StyleSheet" href="../../css/header.css" type="text/css">
+	<link rel="StyleSheet" href="../../css/footer.css" type="text/css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<header>
+		<div id="login" class="overlay">
+			<form name=form action="index.html">
+				<P>Usuario:    <input type=text name=login> 
+				<P>Contraseña: <input type=password name=password> 
+				<input onclick="go()" type=button value=Acceder>
+			</form> 
+		</div>
+		<div id="cabecera">
+			<img src="../../imagenes/logoSinFondo.png">
+			<h1>Cuidamos tu alimentación,<br>cuidamos de ti</h1>
+			<div class="cabecera-derecha">
+				<a href="#"><img class="espanol" src="../../imagenes/espanol.png"></a>	
+				<a href="#"><img class="ingles" src="../../imagenes/ingles.png"></a>
+				<a href="#login"><img class="login" src="../../imagenes/login.png"></a>
+				<a href="#"><img class="carrito" src="../../imagenes/carrito.png"></a>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<div class="menu">
+			<ul>
+				<li><a href="../../index.html" >Quienes Somos</a></li>
+				<li><a href="#" >Elige tu menú</a>
+					<ul>
+						<li><a href="../vegano/index.html">Vegano</a></li>
+						<li><a href="../vegetariano/index.html">Vegetariano</a></li>
+						<li><a href="../singluten/index.html">Para Celiacos</a></li>
+						<li><a href="../fitness/index.html">Fitness</a></li>
+						<li><a href="#">Estándar</a></li>
+					</ul>
+				</li>
+				<li><a href="../../personal/index.html">Area Personal</a></li>
+				<li><a href="../../contacto/index.html">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<section >
+			<article >
+				<div>
+					<h1>PACK 1</h1>
+					<h2>Desayuno <em>Selecciona este menú</em></h2>
+					<div class="pack" onclick="annadir();">
+						<div class="foto desayuno" id="desayuno1">
+							<div class="ingredientes">
+								<h4>Tostada de pan integral con aguacate y zumo de naranja, café, té o
+			infusión.</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>Dos rebanadas de pan integral.</li>
+									<li>½ de aguacate. </li>
+									<li>2 naranjas naturales.</li>
+									<li>1 taza mediana de café, té o infusión.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<h4 class="precio">PRECIO DESAYUNO: 3,50€.</h4>
+					</div>
+					<h2>Comida <em>Selecciona este menú</em></h2>
+					<div class="pack" onclick="annadir();" >
+						<div class="foto"id="comida1-1">
+							<div class="ingredientes">
+								<h4>Primero: Ensalada de brócoli</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>2 brócolis.</li>
+									<li>1 tomate.</li>
+									<li>3 cucharadas de aceite de oliva.</li>
+									<li>1 cucharada de vinagre balsámico.</li>
+									<li>Una pizca de sal</li>
+								</ul>
+							</div>
+						</div>
+						<div class="foto"id="comida1-2">
+							<div class="ingredientes">
+								<h4>Segundo:Lasaña de verdura con boletus:</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>1 cebolla.</li>
+									<li>1 pimiento rojo.</li>
+									<li>1 pimiento verde.</li>
+									<li>2 tomates.</li>
+									<li>1 zanahoria.</li>
+									<li>1⁄2 calabacín.</li>
+									<li>1 puerro.</li>
+									<li>400 g. de boletus.</li>
+									<li>2 dientes de ajo.</li>
+									<li>1 bote de tomate frito.</li>
+									<li>2 cajas de lasaña precocida.</li>
+									<li>Queso parmesano.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="foto"id="comida1-3">
+							<div class="ingredientes">
+								<h4>Postre: fruta a elegir.</h4>
+								
+							</div>
+						</div>
+					</div>
+					<div> 
+						<h4 class="precio">PRECIO TOTAL COMIDA: 15,65€.</h4>
+					</div>
+					<h2>Cena <em>Selecciona este menú</em></h2>
+					<div class="pack" onclick="annadir();">
+						<div class="foto" id="cena1-1">
+							<div class="ingredientes">
+								<h4>Primero: Humus de remolacha</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>60 gramos de garbanzos crudos o 400 gramos de garbanzos cocidos.</li>
+									<li>El zumo de un limón.</li>
+									<li>1 cucharada sopera de tahini.</li>
+									<li>1 diente de ajo sin el germen. 1/2 cucharadita de sal.</li>
+									<li>2 cucharaditas de comino.</li>
+									<li>1 remolacha de unos 180 gramos (cocida).</li>
+									<li>Semillas de sésamos.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="foto" id="cena1-2">
+							<div class="ingredientes">
+								<h4>Segundo: Verduras al vapor</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>1 zanahoria.</li>
+									<li>Judías verdes.</li>
+									<li>Cebolla.</li>
+									<li>1 bolsa de guisantes congelados.</li>
+								</ul>
+
+							</div>
+						</div>
+						<div class="foto" id="cena1-3">
+							<div class="ingredientes">
+
+								<h4>Cookie vegana con nueces de macadamia.</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>1⁄4 de taza de leche de soja.</li>
+									<li>1 cucharadita de vainilla.</li>
+									<li>150 gramos de nueces de macadamia.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<h4 class="precio">PRECIO TOTAL CENA: 12,75€</h4>
+					</div>
+				</div>
+			</article>
+			<article >
+				<div>
+					<h1>PACK 2</h1>
+					<h2>Desayuno <em>Selecciona este menú</em></h2>
+					<div class="pack" onclick="annadir();">
+						<div class="foto desayuno" id="desayuno2">
+							<div class="ingredientes">
+								<h4>Bol de avena cocida con leche vegetal, rodajas de plátano y frutos secos.</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>1 taza y media de leche de avena.</li>
+									<li>1 taza de avena en copos.</li>
+									<li>Un plátano.</li>
+									<li>Dos onzas de chocolate negro.</li>
+									<li>Avellanas.</li>
+									<li>Canela en polvo.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<h4 class="precio">PRECIO DESAYUNO: 3,20 €.</h4>
+					</div>
+					<h2>Comida <em>Selecciona este menú</em></h2>
+					<div class="pack" onclick="annadir();">
+						<div class="foto"id="comida2-1">
+							<div class="ingredientes">
+								<h4>Potaje de espinacas y garbanzos</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>350 g. de garbanzos secos.</li>
+									<li>250 g. de espinacas frescas.</li>
+									<li>1-2 dientes de ajo.</li>
+									<li>1⁄2 de cebolla.</li>
+									<li>1 tomate.</li>
+									<li>Pimentón dulce.</li>
+									<li>Sal.</li>
+									<li>Aceite de oliva virgen extra.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="foto"id="comida2-3">
+							<div class="ingredientes">
+								<h4>Salmón al horno con salsa de mango.</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>2 Filetes de salmon.</li>
+									<li>1 Mango.</li>
+									<li>2 Cebolletas.</li>
+									<li>Patatas.</li>
+									<li>Medio limón.</li>
+									<li>2 Cucharadas de aceite de oliva.</li>
+									<li>Cilantro, pimienta, sal.</li>
+									<li>Hojas frescas de espinacas para emplatar.</li>
+									<li>2 dientes de ajo.</li>
+									<li>1 bote de tomate frito.</li>
+									<li>2 cajas de lasaña precocida.</li>
+									<li>Queso parmesano.</li>
+								</ul>
+								
+							</div>
+						</div>
+					</div>
+					<div> 
+						<h4 class="precio">PRECIO TOTAL COMIDA: 6,20 €.</h4>
+					</div>
+					<h2>Cena <em>Selecciona este menú</em></h2>
+					<div class="pack" onclick="annadir();">
+						<div class="foto" id="cena2-1">
+							<div class="ingredientes">
+								<h4>Boniato asado con espinacas, pasas y piñones</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>2 boniatos de 100 gramos cada uno.</li>
+									<li>250 g. de espinacas frescas.</li>
+									<li>11 c/s de piñones.</li>
+									<li>1⁄2 de diente de ajo.</li>
+									<li>Sal.</li>
+									<li>Aceite de oliva virgen extra.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="foto" id="cena2-3">
+							<div class="ingredientes">
+
+								<h4>Galletas veganas de avena y limón.</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>125 ml de aceite de oliva.</li>
+									<li>1 yogur de soja.</li>
+									<li>Ralladura de 1 limón.</li>
+									<li>100 g. de azúcar moreno.</li>
+									<li>70 g. de avena.</li>
+									<li>150 g. de harina.</li>
+									<li>35 g. de Corn Flakes.</li>
+									<li>25 g. de coco en polvo</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<h4 class="precio">PRECIO TOTAL CENA: 10,20 €.</h4>
+					</div>
+				</div>
+			</article>
+
+		</section>
+		<div id="anadido">Menú añadido a la cesta de la compra.</div>
+
+	</main>
+	<footer>
+		<div>
+			<h4>¿Donde estamos?</h4>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.644488905908!2d-3.7017987846033984!3d40.438870379362506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228f69b0f6043%3A0x1d24de78d5d0adff!2sCalle%20de%20Ponzano%2C%2023%2C%2028003%20Madrid!5e0!3m2!1ses!2ses!4v1579429630571!5m2!1ses!2ses" width="300" height="150" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				<div>Calle de Ponzano, nº 23, CP 28003, Madrid. <br/>Horario Tienda: <br/>L – V desde las 08:30 – 20:00 interrumpidamente. <br/>Telefono: 91 256 45 89</div>
+			</div>
+		</div>
+		<div>
+			<h4>Legal</h4>
+			<ul>
+				<li><a href="#">Politica de cookies</a></li>
+				<li><a href="#">Politica de privacidad</a></li>
+				<li><a href="#">Aviso Legal</a></li>
+			</ul>
+		</div>
+		<div>© Greatfood, 2019. Todos los derechos reservados</div>
+	</footer>
+
+	<script  language=JavaScript>
+		window.onload = iniciar;
+
+		function iniciar(){
+			var ListadoFotos=document.querySelectorAll("div .foto");
+			
+			ListadoFotos.forEach(function(elemento){
+
+				elemento.addEventListener('mouseenter', function () {
+					let listadoIngredientes=elemento.querySelector("div .ingredientes");
+					listadoIngredientes.style.display='block';
+					let mensaje=elemento.parentElement.parentElement.querySelector("em");
+					console.log(mensaje);
+					mensaje.style.display='inline';
+				});
+
+				elemento.addEventListener('mouseleave', function () {
+					let listado=elemento.querySelector("div .ingredientes");
+					listado.style.display='none';
+					let mensaje=elemento.parentElement.parentElement.querySelector("em");
+					mensaje.style.display='none';
+				});
+
+			});
+
+		}
+
+		function go(){
+			if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO')
+				document.form.submit()
+			
+			else 
+				alert("Introduzca nombre de usuario y contraseña correctos."); 
+		}
+
+		function annadir() {
+			document.getElementById("anadido").classList.add("animacion");
+			setTimeout(function(){
+				document.getElementById("anadido").classList.remove("animacion");
+			},2000);
+		}
+	</script> 
+
+</body>
+</html>

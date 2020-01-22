@@ -1,0 +1,304 @@
+<!doctype html lang="es">
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title> GREATFOOD-Menús Sin Gluten</title>
+	<link rel="StyleSheet" href="./css/stylesheet.css" type="text/css">
+	<link rel="StyleSheet" href="../../css/header.css" type="text/css">
+	<link rel="StyleSheet" href="../../css/footer.css" type="text/css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+
+	<script  language=JavaScript> 
+		function go(){
+			if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO')
+				document.form.submit()
+			
+			else 
+				alert("Introduzca nombre de usuario y contraseña correctos."); 
+		} 
+	</script> 
+
+</head>
+
+<body>
+	<header>
+		<div id="login" class="overlay">
+			<form name=form action="index.html">
+				<P>Usuario:    <input type=text name=login> 
+				<P>Contraseña: <input type=password name=password> 
+				<input onclick="go()" type=button value=Acceder>
+			</form> 
+		</div>
+		<div id="cabecera">
+			<img src="../../imagenes/logoSinFondo.png">
+			<h1>Cuidamos tu alimentación,<br>cuidamos de ti</h1>
+			<div class="cabecera-derecha">
+				<a href="#"><img class="espanol" src="../../imagenes/espanol.png"></a>	
+				<a href="#"><img class="ingles" src="../../imagenes/ingles.png"></a>
+				<a href="#login"><img class="login" src="../../imagenes/login.png"></a>
+				<a href="#"><img class="carrito" src="../../imagenes/carrito.png"></a>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<div class="menu">
+			<ul>
+				<li><a href="../../index.html" >Quienes Somos</a></li>
+				<li><a href="#" >Elige tu menú</a>
+					<ul>
+						<li><a href="../vegano/index.html">Vegano</a></li>
+						<li><a href="../vegetariano/index.html">Vegetariano</a></li>
+						<li><a href="#">Para Celiacos</a></li>
+						<li><a href="../fitness/index.html">Fitness</a></li>
+						<li><a href="../estandar/index.html">Estándar</a></li>
+					</ul>
+				</li>
+				<li><a href="../../personal/index.html">Area Personal</a></li>
+				<li><a href="../../contacto/index.html">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<section >
+			<article >
+				<div>
+					<h1>PACK 1</h1>
+					<h2>Desayuno <em>Selecciona este menú</em></h2>
+					<div class="pack" onclick="annadir();">
+						<div class="foto desayuno" id="desayuno1">
+							<div class="ingredientes">
+								<h4>Huevos revueltos y verduras,con fruta a elegir.</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>2 Huevos revueltos.</li>
+									<li>Espinacas. </li>
+									<li>Medio tomate.</li>
+									<li>Una Manzana o una pera.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<h4 class="precio">PRECIO DESAYUNO: 2,70€.</h4>
+					</div>
+					<h2>Comida <em>Selecciona este menú</em></h2>
+					<div class="pack" onclick="annadir();" >
+						<div class="foto"id="comida1-1">
+							<div class="ingredientes">
+								<h4>Primero: Ensalada de pollo</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>1 Pechuga de pollo.</li>
+									<li>10 Hojas de lechuga.</li>
+									<li>1 Tomate.</li>
+									<li>1 Zanahoria.</li>
+									<li>Medio limón.</li>
+									<li>100g. de nueces.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="foto"id="comida1-3">
+							<div class="ingredientes">
+								<h4>Postre: fruta a elegir.</h4>
+								
+							</div>
+						</div>
+					</div>
+					<div> 
+						<h4 class="precio">PRECIO TOTAL COMIDA: 7,00€.</h4>
+					</div>
+					<h2>Cena <em>Selecciona este menú</em></h2>
+					<div class="pack" onclick="annadir();">
+						<div class="foto" id="cena1-1">
+							<div class="ingredientes">
+								<h4>Primero: Salteado de ternera</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>150g. De filetes de ternera</li>
+									<li>200g de calabacín.</li>
+									<li>1 Zanahoria.</li>
+									<li>1 diente de ajo .</li>
+									<li>1 Pimiento verde.</li>
+									<li>1 Cebolleta.</li>
+									<li>Perejil fresco.</li>
+									<li>Aceite de oliva virgen extra.</li>
+									<li>Sal.</li>
+									<li>250g de arroz integral.</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="foto" id="cena1-3">
+							<div class="ingredientes">
+
+							
+							</div>
+						</div>
+					</div>
+					<div> 
+						<h4 class="precio">PRECIO TOTAL CENA: 13,50€</h4>
+					</div>
+				</div>
+			</article>
+			<article >
+				<div>
+					<h1>PACK 2</h1>
+					<h2>Desayuno <em>Selecciona este menú</em></h2>
+					<div class="pack" onclick="annadir();">
+						<div class="foto desayuno" id="desayuno2">
+							<div class="ingredientes">
+								<h4>Tostada de pan sin gluten, aceite de oliva y pavo.</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>1 Tostada.</li>
+									<li>1 Cucharada de haceite de oliva.</li>
+									<li>3 Rodajas de pavo.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<h4 class="precio">PRECIO DESAYUNO: 3,00 €.</h4>
+					</div>
+					<h2>Comida <em>Selecciona este menú</em></h2>
+					<div class="pack" onclick="annadir();">
+						<div class="foto"id="comida2-1">
+							<div class="ingredientes">
+								<h4>Alitas de pollo a la plancha con verduras </h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>1kg. alitas de pollo.</li>
+									<li>2 huevos L batidos.</li>
+									<li>1⁄2 Taza de harina de maíz.</li>
+									<li>1⁄2 Taza de cucharadita de pimenton picante .</li>
+									<li>1⁄4 de cucharadita de pimenton picante.</li>
+									<li>2 Cucharaditas de sal.</li>
+									<li>2 Cucharaditas de ajo en polvo.</li>
+									<li>Aceite de oliva virgen extra.</li>
+									<li>Salsa barbacoa, picante u otra al gusto para servir,opcional.</li>
+									<li>Patatas fritas para acompañar,opcional.</li>
+									<li>Arroz cocido.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="foto"id="comida2-2">
+							<div class="ingredientes">
+								<h4>Postre: fruta a elegir.</h4>
+								
+							</div>
+						</div>
+					</div>
+					<div> 
+						<h4 class="precio">PRECIO TOTAL COMIDA: 12,50 €.</h4>
+					</div>
+					<h2>Cena <em>Selecciona este menú</em></h2>
+					<div class="pack" onclick="annadir();">
+						<div class="foto" id="cena2-1">
+							<div class="ingredientes">
+								<h4>Verduras a la plancha</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>1 Calabacín.</li>
+									<li>8 Esparragos verde.</li>
+									<li>1 Pimientorojo y 1 verde.</li>
+									<li>2 Hojas de albahaca.</li>
+									<li>1 Berenjena.</li>
+									<li>2 Tomates.</li>
+									<li>1 Rama de tomillo.</li>
+									<li>Aceite virgen extra.</li>
+									<li>Pimienta, sal.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="foto" id="cena2-2">
+							<div class="ingredientes">
+
+								<h4>Puré de patatas.</h4>
+								<p>Ingredientes:</p>
+								<ul>
+									<li>6 Patatas.</li>
+									<li>50g De mantequilla.</li>
+									<li>25 ml. De doble crema.</li>
+									<li>4 Cucharadas de queso parmesano.</li>
+									<li>Sal y pimienta.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div> 
+						<h4 class="precio">PRECIO TOTAL CENA: 8,00 €.</h4>
+					</div>
+				</div>
+			</article>
+
+		</section>
+		<div id="anadido">Menú añadido a la cesta de la compra.</div>
+
+	</main>
+	<footer>
+		<div>
+			<h4>¿Donde estamos?</h4>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.644488905908!2d-3.7017987846033984!3d40.438870379362506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228f69b0f6043%3A0x1d24de78d5d0adff!2sCalle%20de%20Ponzano%2C%2023%2C%2028003%20Madrid!5e0!3m2!1ses!2ses!4v1579429630571!5m2!1ses!2ses" width="300" height="150" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				<div>Calle de Ponzano, nº 23, CP 28003, Madrid. <br/>Horario Tienda: <br/>L – V desde las 08:30 – 20:00 interrumpidamente. <br/>Telefono: 91 256 45 89</div>
+			</div>
+		</div>
+		<div>
+			<h4>Legal</h4>
+			<ul>
+				<li><a href="#">Politica de cookies</a></li>
+				<li><a href="#">Politica de privacidad</a></li>
+				<li><a href="#">Aviso Legal</a></li>
+			</ul>
+		</div>
+		<div>© Greatfood, 2019. Todos los derechos reservados</div>
+	</footer>
+<script  language=JavaScript>
+		window.onload = iniciar;
+
+		function iniciar(){
+			var ListadoFotos=document.querySelectorAll("div .foto");
+			
+			ListadoFotos.forEach(function(elemento){
+
+				elemento.addEventListener('mouseenter', function () {
+					let listadoIngredientes=elemento.querySelector("div .ingredientes");
+					listadoIngredientes.style.display='block';
+					let mensaje=elemento.parentElement.previousElementSibling.querySelector("em");
+					mensaje.style.display='inline';
+				});
+
+				elemento.addEventListener('mouseleave', function () {
+					let listado=elemento.querySelector("div .ingredientes");
+					listado.style.display='none';
+					let mensaje=elemento.parentElement.previousElementSibling.querySelector("em");
+					mensaje.style.display='none';
+				});
+
+			});
+
+		}
+
+		function go(){
+			if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO')
+				document.form.submit()
+			
+			else 
+				alert("Introduzca nombre de usuario y contraseña correctos."); 
+		}
+
+		function annadir() {
+			document.getElementById("anadido").classList.add("animacion");
+			setTimeout(function(){
+				document.getElementById("anadido").classList.remove("animacion");
+			},2000);
+		}
+	</script> 
+</body>
+</html>

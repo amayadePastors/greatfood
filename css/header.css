@@ -1,0 +1,143 @@
+
+header a:link {
+		width:4%;
+}
+
+.login {
+	width:100%;
+	height:75%;
+}
+
+.overlay {
+    position: fixed;
+    top: 20%;
+    bottom: 0;
+    left: 20%;
+    right: 0;
+	width:50%;
+	height:40%;
+	color:white;
+	text-align:center;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+#cabecera {
+	display:flex;
+	justify-content:space-between;
+	height:20%;
+	background-color: rgba(231,235,231,0.7);
+	margin-top:-10px;
+	margin-left:-10px;
+	font-family: 'Courgette', cursive;
+}
+
+#cabecera h1{
+	text-align: center;
+	padding-top:15px;
+}
+
+#cabecera > img {
+	width:15%;
+}
+
+#cabecera a img{
+	width:100px;
+	height: 50px;
+}
+
+.cabecera-derecha{
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	-ms-grid-template-columns:repeat(2,1fr);
+	grid-template-rows:repeat(2);
+	-ms-grid-template-rows:repeat(2);
+	-ms-grid-auto-flow:columns;
+	grid-auto-flow:columns;
+	margin-top:15px;
+
+
+}
+
+.menu {
+	border:none;
+	border:0px;
+	margin:0px;
+	font-size:15pt;
+	font-family: 'Courgette', cursive;
+}
+
+.menu ul{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	background:#333333;
+	height:35px;
+	list-style:none;
+	margin:0px -10px;
+	padding:0;
+}
+
+.menu li a{
+	color:white;
+	line-height:35px;
+	margin:0px;
+	padding:0px 25px;
+	text-align:center;
+	text-decoration:none;
+}
+
+.menu > ul li:hover{
+	background: #2580a2 url(../imagenes/menu-2-hover.gif) bottom center no-repeat;
+} 
+
+.menu li ul{
+	background:#333333;
+	display:none; 
+	height:auto;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	position:absolute;
+	z-index:200;
+}
+
+.menu li:hover ul{
+	display:block; 
+}
+
+.menu li li {
+	background:url(../imagenes/menu-2-sub_sep.gif) bottom left no-repeat;
+	display:block;
+	float:none;
+	margin:0px;
+	padding:0px;
+	width:auto;
+}
+
+.menu li ul a{
+	display:block;
+	height:35px;
+	font-size:12pt;
+	margin:0px;
+	padding:0px 10px 0px 15px;
+	text-align:left;
+}
+
+.menu li ul a:hover{
+	background:#2580a2 url(../imagenes/menu-2-hover_sub.gif) center left no-repeat;
+}
+
+.menu li ul li:hover a{
+	color:#ffffff;
+}
+
+
+

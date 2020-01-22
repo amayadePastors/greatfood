@@ -1,0 +1,130 @@
+<!doctype html lang="es">
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title> GREATFOOD-Quienes somos</title>
+	<link rel="StyleSheet" href="./css/stylesheet.css" type="text/css">
+	<link rel="StyleSheet" href="./css/header.css" type="text/css">
+	<link rel="StyleSheet" href="./css/footer.css" type="text/css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+
+	<!--<script type="text/javascript" src="./js/portada.js"></script> -->
+
+	<script  language=JavaScript> 
+		function go(){
+			if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO')
+				document.form.submit()
+			
+			else 
+				alert("Introduzca nombre de usuario y contraseña correctos."); 
+		} 
+	</script> 
+
+</head>
+
+<body>
+	<header>
+		<div id="login" class="overlay">
+			<form name=form action="index.html">
+				<P>Usuario:    <input type=text name=login> 
+				<P>Contraseña: <input type=password name=password> 
+				<input onclick="go()" type=button value=Acceder>
+			</form> 
+		</div>
+		<div id="cabecera">
+			<img src="imagenes/logoSinFondo.png">
+			<h1>Cuidamos tu alimentación,<br>cuidamos de ti</h1>
+			<div class="cabecera-derecha">
+				<a href="#"><img class="espanol" src="imagenes/espanol.png"></a>	
+				<a href="#"><img class="ingles" src="imagenes/ingles.png"></a>
+				<a href="#login"><img class="login" src="imagenes/login.png"></a>
+				<a href="#"><img class="carrito" src="imagenes/carrito.png"></a>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<div class="menu">
+			<ul>
+				<li><a href="#" >Quienes Somos</a></li>
+				<li><a href="#" >Elige tu menú</a>
+					<ul>
+						<li><a href="./menus/vegano/index.html">Vegano</a></li>
+						<li><a href="./menus/vegetariano/index.html">Vegetariano</a></li>
+						<li><a href="./menus/singluten/index.html">Para Celiacos</a></li>
+						<li><a href="./menus/fitness/index.html">Fitness</a></li>
+						<li><a href="./menus/estandar/index.html">Estándar</a></li>
+					</ul>
+				</li>
+				<li><a href="./personal/index.html">Area Personal</a></li>
+				<li><a href="./contacto/index.html">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<section>
+			<article class="diapos">
+				<div>
+					<ul>
+						<li><img src="./imagenes/fotoportada.jpg" ></li>
+						<li><img src="./imagenes/2.jpg"></li>
+						<li><img src="./imagenes/3.jpg"></li>
+						<li><img src="./imagenes/4.jpg"></li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="texto">
+				<div>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit quis turpis nec aliquet. Sed ante mauris, laoreet at laoreet et, blandit a tellus. Vivamus egestas est nibh, at condimentum nibh finibus pellentesque. 
+					Sed faucibus molestie elit, non dapibus purus viverra eu. Aenean auctor, libero at feugiat facilisis, turpis sapien condimentum dui, non convallis tellus elit nec nunc. Duis ultrices, urna et auctor venenatis, magna mi dapibus nisi, ac posuere lorem sapien eget nibh. Duis leo magna, sagittis a vestibulum et, tincidunt in ipsum. Cras dui est, placerat eu purus et, fringilla interdum dolor. 
+				</div>
+			</article>
+			<article class="ofertas">
+				<div >
+					<ul>
+		      			<li id="oferta1"><a href="#"><img src="./imagenes/navidad.jpg" ></a></li>
+		        		<li id="oferta2"><a href="#"><img src="./imagenes/2x1.jpg"></a></li>
+		       			<li id="oferta3"><a href="#"><img src="./imagenes/mesgratis.jpg"></a></li>
+		                <li id="oferta4"><a href="#"><img src="./imagenes/nochevieja.jpg"></a></li>
+		    		</ul>
+		    	</div>
+	    		<div class="listaofertas">
+	       			<ul >
+		           		<li><a href="#oferta1">Ofertas Packs Navidad</a></li>
+		          		<li><a href="#oferta2">Oferta 2x1</a></li>
+		            	<li><a href="#oferta3">Primer mes gratis</a></li>
+		            	<li><a href="#oferta4">Especial Nochevieja</a></li>
+	      			</ul>
+	   			</div>	
+			</article>
+		</section>
+
+	</main>
+	<footer>
+		<div>
+			<h4>¿Donde estamos?</h4>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.644488905908!2d-3.7017987846033984!3d40.438870379362506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228f69b0f6043%3A0x1d24de78d5d0adff!2sCalle%20de%20Ponzano%2C%2023%2C%2028003%20Madrid!5e0!3m2!1ses!2ses!4v1579429630571!5m2!1ses!2ses" width="300" height="150" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				<div>Calle de Ponzano, nº 23, CP 28003, Madrid. <br/>Horario Tienda: <br/>L – V desde las 08:30 – 20:00 interrumpidamente. <br/>Telefono: 91 256 45 89</div>
+			</div>
+		</div>
+		<div>
+			<h4>Legal</h4>
+			<ul>
+				<li><a href="#">Politica de cookies</a></li>
+				<li><a href="#">Politica de privacidad</a></li>
+				<li><a href="#">Aviso Legal</a></li>
+			</ul>
+		</div>
+		<div>© Greatfood, 2019. Todos los derechos reservados</div>
+	</footer>
+
+	
+</body>
+</html>
